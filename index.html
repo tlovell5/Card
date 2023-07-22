@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="input-form">
+        <input type="file" id="imageUpload" accept="image/*" />
+        <input type="text" id="title" placeholder="Title" />
+        <input type="text" id="cardTypeInput" placeholder="Type of Card" />
+        <textarea
+          id="description"
+          placeholder="Description"
+          rows="4"
+        ></textarea>
+        <input type="number" id="health" placeholder="Health" />
+        <input type="number" id="aggro" placeholder="Aggro" />
+        <input type="number" id="shield" placeholder="Shield" />
+        <button id="resetButton">Reset</button>
+        <button id="downloadButton">Download</button>
+      </div>
+      <div class="card-border">
+        <div class="card" id="card">
+          <img id="backgroundImage" class="background-image" />
+          <img id="cardImage" src="card.png" />
+          <!-- Local reference to image -->
+          <h1 id="cardTitle"></h1>
+          <div id="cardDescriptionContainer">
+            <p id="cardDescription"></p>
+          </div>
+          <div class="stats">
+            <p id="cardHealth"></p>
+            <p id="cardAggro"></p>
+            <p id="cardShield"></p>
+          </div>
+          <p id="cardType"></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
