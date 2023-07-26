@@ -44,7 +44,7 @@ document.getElementById('resetButton').addEventListener('click', function () {
 document
   .getElementById('downloadButton')
   .addEventListener('click', function () {
-    html2canvas(document.getElementById('card'), { scale: 2 }).then(function (
+    html2canvas(document.getElementById('card'), { scale: 3 }).then(function (
       canvas
     ) {
       var link = document.createElement('a');
