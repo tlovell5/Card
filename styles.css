@@ -156,3 +156,23 @@ body {
   background-color: #4caf50;
   color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .content-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-form {
+    align-items: center;
+  }
+
+  .card-border {
+    width: 90%;
+    height: auto;
+  }
+}
